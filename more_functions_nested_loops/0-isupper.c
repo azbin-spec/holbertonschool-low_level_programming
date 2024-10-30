@@ -1,5 +1,6 @@
 /*
  * File: 0-isupper.c
+ * Auth: main.h
  */
 
 #include "main.h"
