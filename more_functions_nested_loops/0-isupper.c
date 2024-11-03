@@ -1,17 +1,19 @@
-#include "holberton.h"
+#include <stdio.h>
 
-/**
-  * _isupper - Check if a letter is upper
-  * @x: The number to be checked
-  *
-  * Return: 1 for upper letter or 0 for any else
-  */
-int _isupper(int x)
-{
-	if (x >= 65 && x <= 90)
-	{
-		return (1);
-	}
+int _isupper(int c) {
+    // Check if the character falls within the ASCII range for uppercase letters
+    if (c >= 'A' && c <= 'Z') {
+        return 1;
+    }
+    return 0;
+}
 
-	return (0);
+int main() {
+    char ch = 'G';
+    if (_isupper(ch)) {
+        printf("%c is uppercase.\n", ch);
+    } else {
+        printf("%c is not uppercase.\n", ch);
+    }
+    return 0;
 }
