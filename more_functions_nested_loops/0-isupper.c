@@ -1,21 +1,15 @@
-/*
- * File: 0-isupper.c
- * Auth: main.h
- */
-
-#include "main.h"
+#include "holberton.h"
 
 /**
- * _isupper - Checks for uppercase characters.
- * @c: The character to be checked.
+ * _abs - Computes the absolute value of an integer.
+ * @n: The integer to be computed.
  *
- * Return: 1 if character is uppercase, 0 otherwise.
+ * Return: The absolute value of the integer.
  */
-int _isupper(int c)
+int _abs(int n)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
-
+	if (n >= 0)
+		return (n);
 	else
-		return (0);
+		return (-n);
 }
