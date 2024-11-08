@@ -1,29 +1,15 @@
 #include "main.h"
 /**
- * square - mdm
- * @i: i the number
- * @n: n from the sqrt
- * Return: Cooucou
+ * _puts_recursion - print a string follow by a new line
+ * @s: string to print
  */
-int square(int n, int i)
+void _puts_recursion(char *s)
 {
-	if ((i * i) > n)
-		return (-1);
-
-	if (i * i == n)
-		return (i);
-return (square(n, i + 1));
-}
-
-
-
-/**
- * _sqrt_recursion - square number of a num
- * @n: number in question
- * Return: the square
- */
-int _sqrt_recursion(int n)
-{
-	n = square(n, 1);
-return (n);
+	if (*s != '\0')
+	{
+		_putchar(*s);
+		_puts_recursion(s + 1);
+	}
+	else
+		_putchar('\n');
 }
