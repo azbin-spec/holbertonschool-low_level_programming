@@ -27,4 +27,3 @@ int _sqrt_recursion(int n)
 	n = square(n, 1);
 return (n);
 }
-
