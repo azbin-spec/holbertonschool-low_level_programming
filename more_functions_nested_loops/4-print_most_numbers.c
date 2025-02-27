@@ -2,7 +2,7 @@
 
 /**
  * print_most_numbers - print 0 to 9
- * without 2 and 4 
+ * without 2 and 4
  */
 
 void print_most_numbers(void)
@@ -11,7 +11,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i <= O; i++)
 	{
-		if (i != 2 && i !=4)
+		if (i != 2 && i != 4)
 			_putchar(i + '0');
 	}
 	_putchar('\n');
