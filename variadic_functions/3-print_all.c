@@ -2,7 +2,7 @@
 
 /**
  * print_char - print char
- * @args: list of args
+ * @args: list of args to print
  */
 
 void print_char(va_list args)
@@ -12,7 +12,7 @@ void print_char(va_list args)
 
 /**
  * print_int - print char
- * @args: list of args
+ * @args: list of args to print
  */
 
 void print_int(va_list args)
@@ -22,7 +22,7 @@ void print_int(va_list args)
 
 /**
  * print_float - print char
- * @args: list of args
+ * @args: list of args to print
  */
 
 void print_float(va_list args)
@@ -32,24 +32,24 @@ void print_float(va_list args)
 
 /**
  * print_string - print char
- * @args: list of args
+ * @args: list of args to print
  */
 
 void print_string(va_list args)
 {
-	char *x = va_arg(args, char*);
+	char *a = va_arg(args, char*);
 
-	if (x == NULL)
+	if (a == NULL)
 	{
 		printf("(nil)");
 		return;
 	}
-	printf("%s", x);
+	printf("%s", a);
 }
 
 /**
- * print_all - print all type of arg passed in the variadic function
- * @format: the list of types of arg
+ * print_all - prints a string or an int or a char based on args
+ * @format: the numbers of arguments to print based on args
  */
 
 void print_all(const char * const format, ...)
